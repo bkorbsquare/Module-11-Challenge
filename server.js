@@ -7,8 +7,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-app.use(require('./controller/htmlController'));
-app.use(require('./controller/notesController'));
+app.use(require('./Develop/controller/htmlController'));
+app.use(require('./Develop/controller/notesController'));
 
 app.listen(PORT, function () {
     console.log("Server is listening at http://localhost:" + PORT);
