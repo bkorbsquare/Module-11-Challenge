@@ -2,12 +2,14 @@ const express = require('express');
 const router = express.Router();
 const Note = require('../model/notes');
 
-router.get("/api/notes", function (req, res) {
 
-    Note.getNotes()
+router.get("/api/notes", function (req, res) {
+    let results = data
+    //Note.getNotes()
         .then(results => res.json(results))
         .catch(console.error);
 });
+
 
 router.post("/api/notes", function (req, res) {
 

@@ -27,5 +27,5 @@ connection.connect(function (err) {
   console.log("connected as id " + connection.threadId);
 });
 
-connection.query = util.promisify(connection.qery);
+connection.query = util.promisify(connection.query);
 module.exports = connection;
