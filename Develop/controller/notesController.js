@@ -1,11 +1,26 @@
 const express = require('express');
 const router = express.Router();
 const Note = require('../model/notes');
+// Use fs system to read/write files (json)
+const fs = require('fs');
 
 
 router.get("/api/notes", function (req, res) {
+    // load the content from db.json
+    // return that content to the browser
     let results = data
-    //Note.getNotes()
+    
+    /*
+    1) Use db.json to store/retrieve the notes (per README)
+        e.g., results = fs.readFileSync('../db/db.json', 'utf8');
+
+    2) You COULD read it here, and then just send its content to the browser as res.
+
+    3) Alternatively, you can use the Note class and have the read/write stuff there.
+
+    */
+
+    Note.getNotes()
         .then(results => res.json(results))
         .catch(console.error);
 });
