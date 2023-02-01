@@ -5,7 +5,8 @@ const Note = require('../model/notes');
 const fs = require('fs');
 
 
-router.get("/api/notes", function (req, res) {
+router.get('../db/db.json', function (req, res) {
+
     // load the content from db.json
     // return that content to the browser
     let results = data
@@ -17,7 +18,6 @@ router.get("/api/notes", function (req, res) {
     2) You COULD read it here, and then just send its content to the browser as res.
 
     3) Alternatively, you can use the Note class and have the read/write stuff there.
-
     */
 
     Note.getNotes()
