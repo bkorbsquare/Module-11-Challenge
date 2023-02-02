@@ -5,7 +5,7 @@
 - This code displays a Note Taker.
 - I wanted to create a template to generate notes.
 - I coded JavaScript using Express.
-- Given more time I include Try/Catch Statements and style the output page (style was pregenerated).
+- Given more time I would include Try/Catch Statements and style the output page (style was pregenerated).
 
 ## Installation
 
