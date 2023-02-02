@@ -9,7 +9,9 @@ router.get('../db/db.json', function (req, res) {
 
     // load the content from db.json
     // return that content to the browser
-    let results = data
+    results = fs.readFileSync('../db/db.json', 'utf8');
+    res.json(results);
+
     
     /*
     1) Use db.json to store/retrieve the notes (per README)
